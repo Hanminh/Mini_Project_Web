@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.edit {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    display: flex;
+}
+
+.avatar {
+    width: 30%;
+    object-fit: cover;
+    margin: 0 20px;
+}
+
+.edit-info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.form-item {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.label {
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+select {
+    width: 103%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    appearance: none;
+    background: url('./img/arrow.svg') no-repeat right;
+    background-size: 15px;
+}
+
+option {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+option:hover, option:focus {
+    background-color: #5b5b68; 
+}
+
+#email {
+    width: 103%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.edit-btn .cancel-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    height: 30px;
+    width: 103%;
+    font-size: 16px;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.cancel-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #da190b;
+}   
+
+.cancel-btn {
+    margin-top: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border : 2px solid black;
+    font-size: 16px;
+    width: 103%;
+}
+

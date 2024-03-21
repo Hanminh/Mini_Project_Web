@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style-edit.css">
+</head>
+<body>
+
+    <div class="edit">
+        <img src="./assets/img/avartar.jpg" alt="" class = "avatar">
+        <form action="" class="edit-info">
+            <div class="form-item">
+                <label class = "label" for="name">Họ và tên: </label>
+                <input type="text" class="name" id="name" required>
+            </div>
+            
+            <div class="form-item">
+                <label class = "label" for="year">Năm vào trường:</label>
+                <input type="number" class="year" id="year" required>
+            </div>
+
+            <div class="form-item">
+                <label class = "label" for="educate">Bậc đào tạo:</label>
+                <input type="text" class="educate" id="educate" required>
+            </div>
+
+            <div class="form-item">
+                <label class = "label" for="program">Chương trình đào tạo:</label>
+                <input type="text" class="program" id="program" required>
+            </div>
+
+            <div class="form-item">
+                <label for="institute" class="label">Viện đào tạo</label>
+                <input type="text" class="institute" id="institute" required>
+            </div>
+
+            <div class="form-item">
+                <label for="status" class="label">Status:</label>
+                <select name="status" id="status" class="status" required>
+                    <option value="Học">Học</option>
+                    <option value="Thôi học">Thôi học</option>
+                    <option value="Ra trường">Ra trường</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="sex" class="label">Giới tính:</label>
+                <select name="sex" class="sex" id="sex" required>
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="class" class="label">Lớp:</label>
+                <input type="text" class="class" id="class" required>
+            </div>
+
+            <div class="form-item">
+                <label for="grade" class="label">Khóa:</label>
+                <select name="grade" id="grade" class="grade" required>
+                    <option value="63">63</option>
+                    <option value="64">64</option>
+                    <option value="65">65</option>
+                    <option value="66">66</option>
+                    <option value="67">67</option>
+                    <option value="68">68</option>
+                    <option value="69">69</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="email" class="label">Email:</label>
+                <input type="email" class="email" id="email" required>
+            </div>
+
+            <input type="submit" class="edit-btn" value="Edit">
+            <button class="cancel-btn">
+                Cancel
+            </button>
+        </form>
+        <div></div>
+    </div>
+    <script src="./assets/javascript/index-js.js"></script>
+    <script >
+        this.document.getElementById('name').value = localStorage.getItem('name')
+        this.document.getElementById('year').value = localStorage.getItem('year')
+        this.document.getElementById('educate').value = localStorage.getItem('educate')
+        this.document.getElementById('program').value = localStorage.getItem('program')
+        this.document.getElementById('institute').value = localStorage.getItem('institute')
+        this.document.getElementById('status').value = localStorage.getItem('status')
+        this.document.getElementById('status').value = localStorage.getItem('status')
+        this.document.getElementById('sex').value = localStorage.getItem('sex')
+        this.document.getElementById('class').value = localStorage.getItem('class')
+        this.document.getElementById('grade').value = localStorage.getItem('grade')
+        this.document.getElementById('email').value = localStorage.getItem('email')
+    </script>
+    <script src="./assets/javascript/edit-js.js"></script>
+</body>
+</html>
